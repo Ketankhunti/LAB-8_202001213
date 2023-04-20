@@ -97,31 +97,29 @@ public class BoaTest {
 
 ### 4. Modified testIsHealthy() method in the BoaTest class : 
 ```
-@Test
-public void testIsHealthy() {
-    // check that jen is not healthy
-    assertFalse(jen.isHealthy());
-    
-    // check that ken is healthy
-    assertTrue(ken.isHealthy());
-}
+         @Test
+	  public void testIsHealthy() {
+	    Boa healthyBoa = new Boa("Lucy", 8, "granola bars");
+	    equals(healthyBoa.isHealthy());
+	    
+	    Boa sickBoa = new Boa("Sneaky", 6, "mice");
+	    equals(sickBoa.isHealthy());
+	  }
 ```
 </br>
 
 ### 5. Modified testFitsInCage() method in the BoaTest class : 
 ```
-@Test
-public void testFitsInCage() {
-    // Test for jen
-    assertFalse(jen.fitsInCage(1)); // cage length is less than length of boa
-    assertTrue(jen.fitsInCage(2)); // cage length is equal to length of boa
-    assertTrue(jen.fitsInCage(3)); // cage length is greater than length of boa
+         @Test
+	  public void testFitsInCage() {
+	    Boa smallBoa = new Boa("Tiny", 2, "rats");
+	    equals(smallBoa.fitsInCage(5));
+	    equals(smallBoa.fitsInCage(1));
 
-    // Test for ken
-    assertFalse(ken.fitsInCage(2)); // cage length is less than length of boa
-    assertTrue(ken.fitsInCage(3)); // cage length is equal to length of boa
-    assertTrue(ken.fitsInCage(4)); // cage length is greater than length of boa
-}
+	    Boa largeBoa = new Boa("Goliath", 20, "chicken");
+	    equals(largeBoa.fitsInCage(25));
+	    equals(largeBoa.fitsInCage(10));
+	  }
 ```
 </br>
 
