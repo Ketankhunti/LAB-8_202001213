@@ -78,7 +78,7 @@ public class BoaTest {
 }
 
 ```
-![Alt text](lab8_4.png)
+![Alt text](running_testcases.png)
 
 ### 3. Modified setUp() method in the BoaTest class : 
 ```
@@ -183,7 +183,7 @@ public class BoaTest {
     }
 }
 ```
-![Alt text](lab8_7.png)
+![Alt text](inches.png)
 
 This new test case checks that the lengthInInches() method returns the expected value when called on each of the Boa objects created in the setUp() method. It uses the assertEquals() method to compare the expected value to the actual value returned by the lengthInInches() method. The @Test annotation indicates that this is a test method that should be run by JUnit.
 </br>
