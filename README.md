@@ -3,7 +3,7 @@
 # ID - 202001213
 
 ## 1. Creating a new Eclipse project, and within the project create a package and defining the class as mentioned in PDF.
-![Alt text](1_202001213.png)
+![Alt text](lab8_2.png)
 
 ### 2. Class and Test method to test the behaviour of the Boa class : 
 
@@ -78,6 +78,7 @@ public class BoaTest {
 }
 
 ```
+![Alt text](lab8_4.png)
 
 ### 3. Modified setUp() method in the BoaTest class : 
 ```
@@ -94,6 +95,8 @@ public class BoaTest {
     // write test methods here
 }
 ```
+
+![Alt text](modified_setup.png)
 
 ### 4. Modified testIsHealthy() method in the BoaTest class : 
 ```
@@ -124,6 +127,8 @@ public class BoaTest {
 </br>
 
 ### 6. Running test cases
+
+![Alt text](running_testcases.png)
 
 ### 7. Here's the modified Boa class with the new lengthInInches() method:
 ```
@@ -178,5 +183,7 @@ public class BoaTest {
     }
 }
 ```
+![Alt text](lab8_7.png)
+
 This new test case checks that the lengthInInches() method returns the expected value when called on each of the Boa objects created in the setUp() method. It uses the assertEquals() method to compare the expected value to the actual value returned by the lengthInInches() method. The @Test annotation indicates that this is a test method that should be run by JUnit.
 </br>
